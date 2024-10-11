@@ -1,0 +1,102 @@
+header {
+  background-color: #fff;
+  height: 15vh;
+  box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+header img {
+  width: 170px;
+}
+header a {
+  margin-left: 30px;
+  transition: 0.5s;
+  font-weight: 500;
+}
+header a:hover {
+  color: #27ae60;
+}
+header span {
+  width: auto;
+  padding: 0px 6px;
+  background: #27ae60;
+  border-radius: 50px;
+  color: #ffffff;
+  margin-right: 4px;
+  font-weight: 400;
+}
+header h4 {
+  font-weight: 500;
+  margin-right: 20px;
+}
+header .toggle {
+  display: none;
+}
+header .btn1 {
+  /* height: 10px; */
+}
+
+/* Responsive Design for Tablets */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0;
+  }
+  header img {
+    margin-top: 30px;
+    width: 150px;
+  }
+  header .button {
+    display: none;
+  }
+  header .nav .flex {
+    display: none;
+  }
+  header .toggle {
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  header .small {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background-color: #27ae60;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header li a {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 480px) {
+  header {
+    height: auto;
+    padding: 10px 0;
+  }
+  header img {
+    width: 130px;
+    margin: 0 auto;
+  }
+  header a {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  header .small {
+    padding: 15px;
+  }
+  header .toggle {
+    margin-top: 10px;
+  }
+  header span {
+    padding: 0 4px;
+  }
+}

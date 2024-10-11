@@ -1,0 +1,119 @@
+.price {
+  text-align: center;
+  padding: 40px 20px;
+}
+.price .content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.price .content .box {
+  width: 31.5%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.price .content .box:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+.price button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #27ae60;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.price button:hover {
+  background-color: #1e8e50;
+}
+.price .box:nth-child(1) .topbtn button,
+.price .box:nth-child(3) .topbtn button {
+  display: none;
+}
+.price h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.price h1 {
+  font-size: 60px;
+  margin: 15px 0;
+}
+.price h1 span {
+  font-size: 30px;
+  font-weight: 500;
+}
+.price ul {
+  margin-top: 40px;
+  list-style: none;
+  padding: 0;
+}
+.price ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.price label {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: #27ae60;
+  color: #fff;
+  text-align: center;
+  margin-right: 20px;
+}
+.price .btn5 {
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 5px;
+  background-color: #27ae60;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Responsive Design for Tablets */
+@media screen and (max-width: 800px) {
+  .price .content {
+    flex-direction: column;
+  }
+  .price .content .box {
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+  .price h1 {
+    font-size: 50px;
+  }
+  .price h1 span {
+    font-size: 26px;
+  }
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 480px) {
+  .price h3 {
+    font-size: 20px;
+  }
+  .price h1 {
+    font-size: 40px;
+  }
+  .price h1 span {
+    font-size: 24px;
+  }
+  .price ul li {
+    margin-bottom: 15px;
+  }
+  .price button,
+  .price .btn5 {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
